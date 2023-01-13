@@ -22,6 +22,10 @@
 
     var ExposeMethod = {
 
+        // clazz => 'JsInvokeJavaScope'
+        //method => 'showToast' ---> 应该是后端定义的方法
+        //param => 传递的参数给后端
+        //callback => 前台接收的回调函数
         callMethod: function (clazz, method, param, callback) {
             var port = PrivateMethod.generatePort();
             if (typeof callback !== 'function') {
